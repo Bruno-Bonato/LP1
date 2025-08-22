@@ -1,0 +1,7 @@
+Exercícios Slide 3 - Tipos
+
+1)Um tipo é a classificação de um dado em um conjunto que possui características e operações próprias. Os tipos servem para evitar manipulações incorretas, facilitar a leitura e a compreensão do algoritmo, além de contribuir para o desempenho do programa e para o gerenciamento da memória.
+
+2)O programa dara um erro de execução,pois tenta-se subtrair um int (100) com um array de char ("10"). O erro apresentado é "error: invalid operands to binary - (have 'int' and 'char *')", o terminal informa que o erro esta na utilização de um operador binário "-" entre tipos diferentes.
+
+4)Uma linguagem que utiliza tipagem estática (como C, C++ e Java) exige que todas as variáveis tenham seus tipos declarados antes de serem utilizadas, e esses tipos não podem ser alterados posteriormente. Embora rígida, a tipagem estática permite uma melhor gestão de memória e maior segurança. Por outro lado, linguagens de tipagem dinâmica (como JavaScript, Python e PHP) não exigem a declaração prévia dos tipos das variáveis e permitem que estes sejam alterados durante a execução. Contudo, a tipagem dinâmica, embora mais flexível, costuma consumir mais memória e torna menos previsível o tipo de dado que está sendo manipulado.
