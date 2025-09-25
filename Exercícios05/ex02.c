@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-int compra(int* conta, int saldo, int despesa){
-    *conta = saldo - despesa;
+int compra(int* conta, int valor){
+    *conta = *conta - valor;
     return *conta;
 }
 
 int main(void){
-    int minha_conta1, minha_conta2, despesa = 500;
+    int minha_conta1, minha_conta2, valor = 500;
     int* conta;
    
 
@@ -15,10 +15,10 @@ int main(void){
 
     if (minha_conta1 > minha_conta2){
         conta = &minha_conta1;
-        printf("O saldo das contas é: %d e %d\n", compra(conta, *conta, despesa), minha_conta2);
+        printf("O saldo das contas é: %d e %d\n", compra(conta, valor),minha_conta2);
     } else {
         conta = &minha_conta2;
-        printf("O saldo das contas é: %d e %d\n", minha_conta1, compra(conta, *conta, despesa));
+        printf("O saldo das contas é: %d e %d\n", minha_conta1, compra(conta, valor));
     }
 
     return 0;
