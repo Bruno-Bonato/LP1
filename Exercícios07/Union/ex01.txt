@@ -1,0 +1,5 @@
+1)Struct é um tipo composto cujo tamanho em bytes corresponde à soma dos tamanhos de cada campo. Além disso, os campos são independentes, podendo ser acessados simultaneamente. Union, por outro lado, é um tipo composto cujo tamanho total corresponde ao tamanho, em bytes, do maior campo. Dessa forma, todos os campos compartilham o mesmo espaço de memória, o que impede o acesso a mais de um campo ao mesmo tempo. Isso ocorre porque a union se utiliza da tipagem fraca de C para o gerenciamento de memória, o que pode acarretar em um campo sobrescrevendo o outro.
+
+Exemplos:
+Struct: extrato bancário — cada campo (tipo de transação, saldo, data) existe de forma independente e pode ser usado simultaneamente.
+Union: chave PIX — você pode ter telefone, e-mail ou CPF, mas só precisa armazenar um deles por vez, já que se trata de uma única chave.

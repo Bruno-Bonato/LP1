@@ -1,0 +1,1 @@
+3) Uma união discriminada é uma union com uma tag (discriminador) que indica qual membro está em uso, tornando o acesso seguro e controlado. Ela é necessária porque permite saber qual campo da union contém um valor válido, além de identificar de forma explícita qual campo deve ser usado, ajudando a evitar leituras incorretas.
